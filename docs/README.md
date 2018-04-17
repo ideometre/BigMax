@@ -17,7 +17,7 @@ Ces pièces en sont conçues pour etre imprimées chez soi avec une imprimante 3
 * Support moteurs
 * Roues
 
-## [Electrique](https://github.com/maxime-hanicotte/BigMax/tree/master/électrique)
+## [Electronique](https://github.com/maxime-hanicotte/BigMax/tree/master/électronique)
 
 ### Modules
 
