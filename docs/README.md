@@ -2,7 +2,7 @@
 
 Description du projet et objectifs ...
 
-## Mécanique [->](https://github.com/maxime-hanicotte/BigMax/tree/master/mécanique)
+## [Mécanique](https://github.com/maxime-hanicotte/BigMax/tree/master/mécanique)
 
 ### Pièces 2D
 
@@ -12,7 +12,7 @@ Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées
 
 Ces pièces en sont conçues pour etre imprimées chez soi avec une imprimante 3D.
 
-## Electrique [->](https://github.com/maxime-hanicotte/BigMax/tree/master/électrique)
+## [Electrique](https://github.com/maxime-hanicotte/BigMax/tree/master/électrique)
 
 ### Modules
 
@@ -25,7 +25,7 @@ Conception de la carte életronique du robot :
 * Schématique
 * PCB
 
-## Informatique [->](https://github.com/maxime-hanicotte/BigMax/tree/master/informatique)
+## [Informatique](https://github.com/maxime-hanicotte/BigMax/tree/master/informatique)
 
 ### Librairies
 
