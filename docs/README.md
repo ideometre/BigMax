@@ -22,8 +22,8 @@ Les modules standards utilisés pour ce projet.
 
 Conception de la carte életronique du robot :
 
-    - Schématique
-    - PCB
+* Schématique
+* PCB
 
 ## Informatique [->](https://github.com/maxime-hanicotte/BigMax/tree/master/informatique)
 
