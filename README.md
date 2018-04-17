@@ -1,1 +1,1 @@
-# Welcome to BigMax repository
+# [Welcome to BigMax repository](https://maxime-hanicotte.github.io/BigMax/)
