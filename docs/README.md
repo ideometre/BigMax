@@ -1,4 +1,4 @@
-# Bienvenue sur la page de BigMax
+# Bienvenue sur la page du projet
 
 Description du projet et objectifs ...
 
