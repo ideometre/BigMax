@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/MHanicotte/Documents/BigMax_project/BigMax_project.sch</source>
+    <date>19/04/2018 08:12:54</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>BigMax_project.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>AD558JP</value>
+      <libsource lib="adc-dac" part="AD558JP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AD8334A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="adc-dac" part="AD558JP">
+      <aliases>
+        <alias>AD558KP</alias>
+      </aliases>
+      <description>Single 8-bit DAC, Internal Reference, Output Amp, Single Supply, PLCC-20</description>
+      <docs>http://www.analog.com/static/imported-files/data_sheets/AD558.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD558JP</field>
+      </fields>
+      <pins>
+        <pin num="2" name="DB0" type="input"/>
+        <pin num="3" name="DB1" type="input"/>
+        <pin num="4" name="DB2" type="input"/>
+        <pin num="5" name="DB3" type="input"/>
+        <pin num="7" name="DB4" type="input"/>
+        <pin num="8" name="DB5" type="input"/>
+        <pin num="9" name="DB6" type="input"/>
+        <pin num="10" name="DB7" type="input"/>
+        <pin num="12" name="~CE" type="input"/>
+        <pin num="13" name="~CS" type="input"/>
+        <pin num="14" name="V+" type="power_in"/>
+        <pin num="15" name="DGND" type="power_in"/>
+        <pin num="17" name="AGND" type="power_in"/>
+        <pin num="18" name="VSEL" type="input"/>
+        <pin num="19" name="VSEN" type="input"/>
+        <pin num="20" name="VOUT" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="adc-dac">
+      <uri>C:\Program Files\KiCad\share\kicad\library\adc-dac.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+  </nets>
+</export>
