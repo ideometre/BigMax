@@ -1,1 +1,1 @@
-instuction pour la découpe de pièces 2D
+Instructions pour la découpe de pièces 2D
