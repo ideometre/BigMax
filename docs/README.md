@@ -25,7 +25,7 @@ Les modules standards utilisés pour ce projet
 * Arduino Nano v3
 * VL53V0X (capteur de distance)
 * QTR-1RC (détecteur de lignes)
-* L298N (Contrôleur des moteurs)
+* L298N (contrôleur des moteurs)
 
 ### CAO
 
