@@ -6,14 +6,14 @@ Description du projet et objectifs ...
 
 ### Pièces 2D
 
-Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées avec une découpeuse laser sur divers materiaux (bois, plexiglass, aluminium ...):
+Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées avec une découpeuse laser sur divers matériaux (bois, plexiglass, aluminium)
 * Face avant
 * Face arrière
 * Côtés droit et gauche
 
 ### Pièces 3D
 
-Ces pièces en sont conçues pour etre imprimées chez soi avec une imprimante 3D.
+Ces pièces sont conçues pour être imprimées chez soi avec une imprimante 3D
 * Support moteurs
 * Roues
 
@@ -21,15 +21,15 @@ Ces pièces en sont conçues pour etre imprimées chez soi avec une imprimante 3
 
 ### Modules
 
-Les modules standards utilisés pour ce projet :
+Les modules standards utilisés pour ce projet
 * Arduino Nano v3
-* VL53V0X
-* QTR-1RC
-* L298N
+* VL53V0X (capteur de distance)
+* QTR-1RC (détecteur de lignes)
+* L298N (Contrôleur des moteurs)
 
 ### CAO
 
-Conception de la carte életronique du robot :
+Conception de la carte életronique du robot
 * Schématique
 * PCB
 
@@ -37,8 +37,8 @@ Conception de la carte életronique du robot :
 
 ### Librairies
 
-Librairies utilisées.
+Librairies utilisées
 
 ### Code source
 
-Code source du projet.
+Code source du projet
