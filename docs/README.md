@@ -1,6 +1,6 @@
 # Bienvenue sur la page du projet
 
-Description du projet et objectifs ...
+Big Max est un robot destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.wikipedia.org/wiki/Robot_sumo)) dans la catégorie mini. Le projet a une vocation éducative et permet d'aborder les troix sujets clefs que sont la mécanique, l'électronique et l'informatique autout de la conception de ce robot.
 
 ## [Mécanique](https://github.com/maxime-hanicotte/BigMax/tree/master/mécanique)
 
@@ -25,7 +25,7 @@ Les modules standards utilisés pour ce projet
 * Arduino Nano v3
 * VL53V0X (capteur de distance)
 * QTR-1RC (détecteur de lignes)
-* L298N (contrôleur des moteurs)
+* L298N/MX1616 (contrôleur des moteurs)
 
 ### CAO
 
