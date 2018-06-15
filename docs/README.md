@@ -43,4 +43,4 @@ Librairies utilisées
 
 Code source du projet
 
-![icon](12615544.png =50x "MX")
+![icon](./12615544.png =50x)
