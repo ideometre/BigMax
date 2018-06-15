@@ -43,4 +43,4 @@ Librairies utilisées
 
 Code source du projet
 
-![Alt text](12615544.png?raw=true "MX")
+![icon](12615544.png =50 "MX")
