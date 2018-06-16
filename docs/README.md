@@ -19,7 +19,6 @@ Ces pièces sont conçues pour être imprimées chez soi avec une imprimante 3D
 * Support moteurs
 * Roues
 
-<img src="./img/kicad-logo.png" width="36" alt="kicad" align="left">
 ## [Electronique](https://github.com/maxime-hanicotte/BigMax/tree/master/électronique)
 
 ### Modules
@@ -30,6 +29,7 @@ Les modules standards utilisés pour ce projet
 * QTR-1RC (détecteur de lignes)
 * L298N/MX1616 (contrôleur des moteurs)
 
+<img src="./img/kicad-logo.png" width="36" alt="kicad" align="left">
 ### CAO
 
 Conception de la carte életronique du robot
