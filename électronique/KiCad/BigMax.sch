@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BigMax
+LIBS:BigMax-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Projet BigMax"
+Date "2018-05-06"
+Rev "1"
+Comp "MX"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BiBus U?
+U 1 1 5AEF3889
+P 5200 5700
+F 0 "U?" H 5400 6200 60  0000 C CNN
+F 1 "BiBus" H 5050 6200 60  0000 C CNN
+F 2 "" H 5200 5700 60  0001 C CNN
+F 3 "" H 5200 5700 60  0001 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NanoV3 U?
+U 1 1 5AEF4940
+P 5650 2650
+F 0 "U?" H 6050 4250 60  0000 C CNN
+F 1 "NanoV3" H 5250 4250 60  0000 C CNN
+F 2 "" H 1650 3300 60  0001 C CNN
+F 3 "" H 1650 3300 60  0001 C CNN
+	1    5650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GYVL53L0XV2 U?
+U 1 1 5AEF4971
+P 9600 3350
+F 0 "U?" H 10000 3700 60  0000 C CNN
+F 1 "GYVL53L0XV2" H 9400 3700 60  0000 C CNN
+F 2 "" H 9600 3350 60  0001 C CNN
+F 3 "" H 9600 3350 60  0001 C CNN
+	1    9600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GYVL53L0XV2 U?
+U 1 1 5AEF49C0
+P 9600 4700
+F 0 "U?" H 10000 5050 60  0000 C CNN
+F 1 "GYVL53L0XV2" H 9400 5050 60  0000 C CNN
+F 2 "" H 9600 4700 60  0001 C CNN
+F 3 "" H 9600 4700 60  0001 C CNN
+	1    9600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRS01A U?
+U 1 1 5AEF4A43
+P 9600 1150
+F 0 "U?" H 9900 1450 60  0000 C CNN
+F 1 "IRS01A" H 9400 1450 60  0000 C CNN
+F 2 "" H 9600 950 60  0001 C CNN
+F 3 "" H 9600 950 60  0001 C CNN
+	1    9600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRS01A U?
+U 1 1 5AEF4B1C
+P 9600 2200
+F 0 "U?" H 9900 2500 60  0000 C CNN
+F 1 "IRS01A" H 9400 2500 60  0000 C CNN
+F 2 "" H 9600 2000 60  0001 C CNN
+F 3 "" H 9600 2000 60  0001 C CNN
+	1    9600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX1616 U?
+U 1 1 5AEF4B85
+P 2150 3150
+F 0 "U?" H 2400 3650 60  0000 C CNN
+F 1 "MX1616" H 2000 3650 60  0000 C CNN
+F 2 "" H 2150 3150 60  0001 C CNN
+F 3 "" H 2150 3150 60  0001 C CNN
+	1    2150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L motor U?
+U 1 1 5B202EE1
+P 1750 6850
+F 0 "U?" H 2200 7000 60  0000 C CNN
+F 1 "motor" H 2250 7200 60  0000 C CNN
+F 2 "" H 1750 6850 60  0001 C CNN
+F 3 "" H 1750 6850 60  0001 C CNN
+	1    1750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L motor U?
+U 1 1 5B202F38
+P 3150 6850
+F 0 "U?" H 3600 7000 60  0000 C CNN
+F 1 "motor" H 3650 7200 60  0000 C CNN
+F 2 "" H 3150 6850 60  0001 C CNN
+F 3 "" H 3150 6850 60  0001 C CNN
+	1    3150 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MT3608 U?
+U 1 1 5B2031C3
+P 2300 1400
+F 0 "U?" H 2600 1600 60  0000 C CNN
+F 1 "MT3608" H 2100 1600 60  0000 C CNN
+F 2 "" H 2300 1400 60  0001 C CNN
+F 3 "" H 2300 1400 60  0001 C CNN
+	1    2300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS61090 U?
+U 1 1 5B2035D6
+P 7550 2800
+F 0 "U?" H 7700 3350 60  0000 C CNN
+F 1 "TPS61090" H 7300 3350 60  0000 C CNN
+F 2 "" H 7550 2750 60  0001 C CNN
+F 3 "" H 7550 2750 60  0001 C CNN
+	1    7550 2800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
