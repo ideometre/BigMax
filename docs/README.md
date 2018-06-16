@@ -4,16 +4,16 @@ Big Max est un robot destiné à concourir aux compétitions de robot sumo (ou [
 
 ## [Mécanique](https://github.com/maxime-hanicotte/BigMax/tree/master/mécanique)
 
-<img src="./img/inkscape-logo.svg" width="36" alt="inkscape" align="left">
 ### Pièces 2D
+<img src="./img/inkscape-logo.svg" width="36" alt="inkscape" align="right">
 
 Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées avec une découpeuse laser sur divers matériaux (bois, plexiglass, aluminium)
 * Face avant
 * Face arrière
 * Côtés droit et gauche
 
-<img src="./img/freecad-logo.png" width="36" alt="freecad" align="left">
 ### Pièces 3D
+<img src="./img/freecad-logo.png" width="36" alt="freecad" align="right">
 
 Ces pièces sont conçues pour être imprimées chez soi avec une imprimante 3D
 * Support moteurs
@@ -29,15 +29,15 @@ Les modules standards utilisés pour ce projet
 * QTR-1RC (détecteur de lignes)
 * L298N/MX1616 (contrôleur des moteurs)
 
-<img src="./img/kicad-logo.png" width="36" alt="kicad" align="left">
 ### CAO
+<img src="./img/kicad-logo.png" width="36" alt="kicad" align="right">
 
 Conception de la carte életronique du robot
 * Schématique
 * PCB
 
-<img src="./img/arduino-logo.svg" width="36" alt="arduino" align="left">
 ## [Informatique](https://github.com/maxime-hanicotte/BigMax/tree/master/informatique)
+<img src="./img/arduino-logo.svg" width="36" alt="arduino" align="right">
 
 ### Librairies
 
