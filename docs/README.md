@@ -1,9 +1,10 @@
-# Bienvenue sur la page du projet
+﻿# Bienvenue sur la page du projet
 
 Big Max est un robot destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.wikipedia.org/wiki/Robot_sumo)) dans la catégorie mini. Le projet a une vocation éducative et permet d'aborder les troix sujets clefs que sont la mécanique, l'électronique et l'informatique autout de la conception de ce robot.
 
 ## [Mécanique](https://github.com/maxime-hanicotte/BigMax/tree/master/mécanique)
 
+<img src="./img/inkscape-logo.svg" width="36" alt="inkscape" align="left">
 ### Pièces 2D
 
 Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées avec une découpeuse laser sur divers matériaux (bois, plexiglass, aluminium)
@@ -11,12 +12,14 @@ Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées
 * Face arrière
 * Côtés droit et gauche
 
+<img src="./img/freecad-logo.png" width="36" alt="freecad" align="left">
 ### Pièces 3D
 
 Ces pièces sont conçues pour être imprimées chez soi avec une imprimante 3D
 * Support moteurs
 * Roues
 
+<img src="./img/kicad-logo.png" width="36" alt="kicad" align="left">
 ## [Electronique](https://github.com/maxime-hanicotte/BigMax/tree/master/électronique)
 
 ### Modules
@@ -33,6 +36,7 @@ Conception de la carte életronique du robot
 * Schématique
 * PCB
 
+<img src="./img/arduino-logo.svg" width="36" alt="arduino" align="left">
 ## [Informatique](https://github.com/maxime-hanicotte/BigMax/tree/master/informatique)
 
 ### Librairies
@@ -43,7 +47,7 @@ Librairies utilisées
 
 Code source du projet
 
-<img src="./12615544.png" width="36" alt="MX" align="right">
+<img src="./img/mx-logo.png" width="36" alt="MX" align="right">
 
 
 
