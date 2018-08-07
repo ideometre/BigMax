@@ -1,6 +1,6 @@
 ﻿# Bienvenue sur la page du projet
 
-Big Max est un robot destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.wikipedia.org/wiki/Robot_sumo)) dans la catégorie mini. Le projet a une vocation éducative et permet d'aborder les troix sujets clefs que sont la mécanique, l'électronique et l'informatique autout de la conception de ce robot.
+Big Max est un robot destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.wikipedia.org/wiki/Robot_sumo)) dans la catégorie mini. Le projet a une vocation éducative et permet d'aborder les trois sujets clés que sont la mécanique, l'électronique et l'informatique autour de la conception de ce robot.
 
 ## [Mécanique](https://github.com/maxime-hanicotte/BigMax/tree/master/mécanique)
 
@@ -35,13 +35,14 @@ Les modules standards utilisés pour ce projet
 Conception de la carte életronique du robot
 * Schématique
 * PCB
+* Liste du matériel
 
 ## [Informatique](https://github.com/maxime-hanicotte/BigMax/tree/master/informatique)
 <img src="./img/arduino-logo.svg" width="36" alt="arduino" align="right">
 
-### Librairies
+### Bibliothèques
 
-Librairies utilisées
+Bibliothèques utilisées
 
 ### Code source
 
