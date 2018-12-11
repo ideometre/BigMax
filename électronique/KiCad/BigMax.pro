@@ -1,4 +1,8 @@
+<<<<<<< HEAD:électronique/KiCad/BigMax.pro
 update=06/05/2018 20:20:27
+=======
+update=12/06/2018 22:44:27
+>>>>>>> b9ed1d18844d11ddb79e90b59167690b7b21526c:électronique/KiCad/BigMax.pro
 version=1
 last_client=kicad
 [pcbnew]
