@@ -31,41 +31,30 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:BigMax_project-cache
+LIBS:BigMax
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Projet BigMax"
+Date "2018-05-06"
+Rev "1"
+Comp "MX"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +BATT #PWR01
-U 1 1 5AD3C3AF
-P 3950 3000
-F 0 "#PWR01" H 3950 2850 50  0001 C CNN
-F 1 "+BATT" H 3950 3140 50  0000 C CNN
-F 2 "" H 3950 3000 50  0001 C CNN
-F 3 "" H 3950 3000 50  0001 C CNN
-	1    3950 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L -BATT #PWR02
-U 1 1 5AD3C3E1
-P 3950 3250
-F 0 "#PWR02" H 3950 3100 50  0001 C CNN
-F 1 "-BATT" H 3950 3390 50  0000 C CNN
-F 2 "" H 3950 3250 50  0001 C CNN
-F 3 "" H 3950 3250 50  0001 C CNN
-	1    3950 3250
+L BiBus U?
+U 1 1 5AEF3889
+P 6100 2950
+F 0 "U?" H 6300 3450 60  0000 C CNN
+F 1 "BiBus" H 5950 3450 60  0000 C CNN
+F 2 "" H 6100 2950 60  0001 C CNN
+F 3 "" H 6100 2950 60  0001 C CNN
+	1    6100 2950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
