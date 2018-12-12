@@ -6,43 +6,67 @@
 #define TIMEOUT       2500  // waits for 2500 microseconds for sensor outputs to go low
 #define EMITTER_PIN   2     // emitter is controlled by digital pin 2
 
-// sensors 0 through 7 are connected to digital pins 3 through 10, respectively
-QTRSensorsRC qtrrc((unsigned char[]) {
-  A6, A7
-},
-NUM_SENSORS, TIMEOUT, EMITTER_PIN);
+#define motorRightC1  2
+#define motorRightC2  7
+#define motorLeftC1   3
+#define motorLeftC2   8
+
+// right motor position
+volatile unsigned int motorRightPos = 0;
+unsigned int tmpR = 0;
+
+// left motor position
+volatile unsigned int motorLeftPos = 0;
+unsigned int tmpL = 0;
+
+// right motor encoder
+unsigned int oldRC1 = 0;
+unsigned int newRC1 = 0;
+unsigned int RC2 = 0;
+
+// left motor encoder
+unsigned int oldLC1 = 0;
+unsigned int newLC1 = 0;
+unsigned int LC2 = 0;
+
+// sensors right and left connected to analog pins A6 and A7, respectively
+QTRSensorsRC qtrrc((unsigned char[]){A6,A7}, NUM_SENSORS, TIMEOUT, EMITTER_PIN);
 unsigned int sensorValues[NUM_SENSORS];
 
+// Distance sensor
 VL53L0X sensor;
 
 //Motor A
-const int motorPin1 = 6;  // Pin 14 of L293
-const int motorPin2 = 9;  // Pin 10 of L293
+const int motorPin1 = 6;
+const int motorPin2 = 9;
 
 //Motor B
-const int motorPin3 = 10; // Pin  7 of L293
-const int motorPin4 = 11;  // Pin  2 of L293
+const int motorPin3 = 10;
+const int motorPin4 = 11;
 
 void setup() {
-  // initialize serial and digital pin LED_BUILTIN as an output.
-  Serial.begin(9600);
-  pinMode(LED_BUILTIN, OUTPUT);
+  // initialize serial
+  Serial.begin(115200);
 
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  
   setup_VL53L0X();
   setup_QTRRC();
   setup_motor();
+  setup_encoder();
 }
 
 void loop() {
   loop_VL53L0X();
   loop_QTRRC();
   loop_motor();
-
+  loop_encoder();
 
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+  //delay(1000);                       // wait for a second
 }
 
 void setup_VL53L0X()
@@ -90,6 +114,14 @@ void setup_motor() {
   pinMode(motorPin4, OUTPUT);
 }
 
+void setup_encoder() {
+  pinMode(motorRightC1, INPUT);
+  pinMode(motorLeftC1, INPUT);
+  // encoder pin on interrupt 0 (pin 2)
+  attachInterrupt(0, doEncoderRight, CHANGE);
+  // encoder pin on interrupt 1 (pin 3)
+  attachInterrupt(1, doEncoderLeft, CHANGE);
+}
 
 void loop_QTRRC()
 {
@@ -120,36 +152,87 @@ void loop_VL53L0X()
 }
 
 void loop_motor() {
-  //Motor Control - Motor A: motorPin1,motorpin2 & Motor B: motorpin3,motorpin4
+  // Motor Control - Motor A: motorPin1,motorpin2 & Motor B: motorpin3,motorpin4
 
-  //This code will turn Motor A clockwise for 2 sec.
+  // This code will turn Motor A clockwise for 2 sec.
   analogWrite(motorPin1, 180);
   analogWrite(motorPin2, 0);
   analogWrite(motorPin3, 180);
   analogWrite(motorPin4, 0);
-  delay(5000);
-  //This code will turn Motor A counter-clockwise for 2 sec.
+  delay(1000);
+  // This code will turn Motor A counter-clockwise for 2 sec.
   analogWrite(motorPin1, 0);
   analogWrite(motorPin2, 180);
   analogWrite(motorPin3, 0);
   analogWrite(motorPin4, 180);
-  delay(5000);
-  //This code will turn Motor B clockwise for 2 sec.
+  delay(1000);
+  // This code will turn Motor B clockwise for 2 sec.
   analogWrite(motorPin1, 0);
   analogWrite(motorPin2, 180);
   analogWrite(motorPin3, 180);
   analogWrite(motorPin4, 0);
   delay(1000);
-  //This code will turn Motor B counter-clockwise for 2 sec.
+  // This code will turn Motor B counter-clockwise for 2 sec.
   analogWrite(motorPin1, 180);
   analogWrite(motorPin2, 0);
   analogWrite(motorPin3, 0);
   analogWrite(motorPin4, 180);
   delay(1000);
-  //And this code will stop motors
+  // And this code will stop motors
   analogWrite(motorPin1, 0);
   analogWrite(motorPin2, 0);
   analogWrite(motorPin3, 0);
   analogWrite(motorPin4, 0);
 }
 
+void loop_encoder() {
+  //Check each changes in position
+  if (tmpR != motorRightPos) {
+    Serial.println(motorRightPos, DEC);
+    tmpR = motorRightPos;
+  }
+   //Check each changes in position
+  if (tmpL != motorLeftPos) {
+    Serial.println(motorLeftPos, DEC);
+    tmpL = motorLeftPos;
+  }
+}
+
+// Interrupt on Right changing state
+void doEncoderRight() {
+  delay(1);
+  newRC1 = digitalRead(motorRightC1);
+  RC2 = digitalRead(motorLeftC2);
+  if (oldRC1 == LOW && newRC1 == HIGH && RC2 == LOW){
+    motorRightPos++;
+  }
+  else if (oldRC1 == HIGH && newRC1 == LOW && RC2 == HIGH){
+    motorRightPos++;
+  }
+  else
+  {
+    motorRightPos--;
+  }
+  oldRC1 = newRC1;
+}
+
+// Interrupt on Left changing state
+void doEncoderLeft() {
+  delay(1);
+  newLC1 = digitalRead(motorLeftC1);
+  LC2 = digitalRead(motorLeftC2);
+  if (oldLC1 == LOW && newLC1 == HIGH && LC2 == HIGH){
+    motorLeftPos++;
+  }
+  else if (oldLC1 == HIGH && newLC1 == LOW && LC2 == LOW){
+    motorRightPos++;
+  }
+  else
+  {
+    motorLeftPos--;
+  }
+  oldLC1 = newLC1;
+  
+  //LC1new = digitalRead(encoder0PinB);
+  //LC1new^LC2old ? encoder0Pos++ : encoder0Pos--;
+}
