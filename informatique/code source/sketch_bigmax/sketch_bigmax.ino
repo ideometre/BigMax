@@ -26,16 +26,16 @@ const int motorPin4 = 11;  // Pin  2 of L293
 void setup() {
   // initialize serial and digital pin LED_BUILTIN as an output.
   Serial.begin(9600);
-  pinMode(LED_BUILTIN, OUTPUT);
+  //pinMode(LED_BUILTIN, OUTPUT);
 
-  setup_VL53L0X();
-  setup_QTRRC();
+  //setup_VL53L0X();
+  //setup_QTRRC();
   setup_motor();
 }
 
 void loop() {
-  loop_VL53L0X();
-  loop_QTRRC();
+  //loop_VL53L0X();
+  //loop_QTRRC();
   loop_motor();
 
 
@@ -121,35 +121,11 @@ void loop_VL53L0X()
 
 void loop_motor() {
   //Motor Control - Motor A: motorPin1,motorpin2 & Motor B: motorpin3,motorpin4
-
-  //This code will turn Motor A clockwise for 2 sec.
-  analogWrite(motorPin1, 180);
-  analogWrite(motorPin2, 0);
-  analogWrite(motorPin3, 180);
-  analogWrite(motorPin4, 0);
-  delay(5000);
-  //This code will turn Motor A counter-clockwise for 2 sec.
-  analogWrite(motorPin1, 0);
-  analogWrite(motorPin2, 180);
-  analogWrite(motorPin3, 0);
-  analogWrite(motorPin4, 180);
-  delay(5000);
-  //This code will turn Motor B clockwise for 2 sec.
-  analogWrite(motorPin1, 0);
-  analogWrite(motorPin2, 180);
-  analogWrite(motorPin3, 180);
-  analogWrite(motorPin4, 0);
-  delay(1000);
+  
   //This code will turn Motor B counter-clockwise for 2 sec.
-  analogWrite(motorPin1, 180);
+  analogWrite(motorPin1, 250);
   analogWrite(motorPin2, 0);
   analogWrite(motorPin3, 0);
-  analogWrite(motorPin4, 180);
-  delay(1000);
-  //And this code will stop motors
-  analogWrite(motorPin1, 0);
-  analogWrite(motorPin2, 0);
-  analogWrite(motorPin3, 0);
-  analogWrite(motorPin4, 0);
+  analogWrite(motorPin4, 250);
+  delay(30000);
 }
-

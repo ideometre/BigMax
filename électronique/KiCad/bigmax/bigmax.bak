@@ -15,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bigmax:Arduino_Nano_v3.x A1
+L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5C33D3C7
 P 5200 3800
 F 0 "A1" H 5200 2714 50  0000 C CNN
 F 1 "Arduino_Nano_v3.x" H 5200 2623 50  0000 C CNN
-F 2 "Modules:Arduino_Nano" H 5350 2850 50  0001 L CNN
+F 2 "Modules:Arduino_Nano_WithMountingHoles" H 5350 2850 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5200 2800 50  0001 C CNN
 	1    5200 3800
 	1    0    0    -1  
@@ -731,7 +731,7 @@ U 1 1 5C4FEEB9
 P 3500 950
 F 0 "U10" V 3515 1128 50  0000 L CNN
 F 1 "batt_connector" V 3250 700 50  0000 L CNN
-F 2 "bigmax:batt_connector" H 3450 1000 50  0001 C CNN
+F 2 "" H 3450 1000 50  0001 C CNN
 F 3 "" H 3450 1000 50  0001 C CNN
 	1    3500 950 
 	0    1    1    0   
@@ -744,10 +744,10 @@ Wire Wire Line
 	3450 1700 4450 1700
 Connection ~ 3550 1250
 $Comp
-L power:+BATT #PWR0120
+L power:+BATT #PWR?
 U 1 1 5C502217
 P 5850 1050
-F 0 "#PWR0120" H 5850 900 50  0001 C CNN
+F 0 "#PWR?" H 5850 900 50  0001 C CNN
 F 1 "+BATT" H 5865 1223 50  0000 C CNN
 F 2 "" H 5850 1050 50  0001 C CNN
 F 3 "" H 5850 1050 50  0001 C CNN
