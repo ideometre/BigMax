@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\MHanicotte\Desktop\BigMax\électronique\KiCad\bigmax\bigmax.sch</source>
+    <date>30/01/2019 23:19:48</date>
+    <tool>Eeschema (5.0.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>BIGMAX  robot sumo</title>
+        <company>MX</company>
+        <rev>v1.0</rev>
+        <date>2019-01-30</date>
+        <source>bigmax.sch</source>
+        <comment number="1" value="status : completed"/>
+        <comment number="2" value="author : maxime hanicotte"/>
+        <comment number="3" value="description : standart sumo robot design"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>Arduino_Nano_v3.x</value>
+      <footprint>Modules:Arduino_Nano</footprint>
+      <datasheet>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</datasheet>
+      <libsource lib="bigmax" part="Arduino_Nano_v3.x" description="Arduino Nano v3.x"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33D3C7</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>VL53L0X_a</value>
+      <footprint>bigmax:vl53l0x</footprint>
+      <libsource lib="bigmax" part="VL53L0X" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33DC16</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>VL53L0X_b</value>
+      <footprint>bigmax:vl53l0x</footprint>
+      <libsource lib="bigmax" part="VL53L0X" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33DCC0</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>qtr-1rc_a</value>
+      <footprint>bigmax:qtr_1rc</footprint>
+      <libsource lib="bigmax" part="QTR-1RC" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33DE79</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>qtr-1rc_b</value>
+      <footprint>bigmax:qtr_1rc</footprint>
+      <libsource lib="bigmax" part="QTR-1RC" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33DEEF</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>dc_driver_1A_3-14V</value>
+      <footprint>bigmax:MX1616</footprint>
+      <libsource lib="bigmax" part="dc_driver_1A_3-14V" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33E476</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>dc_geared_encoder</value>
+      <footprint>bigmax:dc_geared_encoder</footprint>
+      <libsource lib="bigmax" part="dc_motor_encoder" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33E826</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>dc_geared_encoder</value>
+      <footprint>bigmax:dc_geared_encoder</footprint>
+      <libsource lib="bigmax" part="dc_motor_encoder" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C33E87E</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>220</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3976C5</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>220</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C397741</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>220</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C397815</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>1k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C411077</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>TPS61090_dc_boost</value>
+      <footprint>bigmax:dc_boost_500C</footprint>
+      <libsource lib="bigmax" part="TPS61090_dc_boost" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3C7513</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>MT3608</value>
+      <footprint>bigmax:MT3608</footprint>
+      <libsource lib="bigmax" part="MT3608" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3C75A5</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_CRGB</value>
+      <footprint>LEDs:LED_D5.0mm-4</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_CRGB" description="RGB LED, cathode/red/green/blue"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4E2E2E</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>Buttons_Switches_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4E53B2</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4F595D</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4.7k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4F59FD</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>batt_connector</value>
+      <footprint>bigmax:batt_connector</footprint>
+      <libsource lib="bigmax" part="batt_connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4FEEB9</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>4.7k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C524D9F</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4.7k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C524F01</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4.7k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C525104</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4.7k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5251C6</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>470µF</value>
+      <footprint>Capacitors_THT:CP_Radial_D10.0mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C55DCB4</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_CRGB">
+      <description>RGB LED, cathode/red/green/blue</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_CRGB</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="RA" type="passive"/>
+        <pin num="3" name="GA" type="passive"/>
+        <pin num="4" name="BA" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="Arduino_Nano_v3.x">
+      <aliases>
+        <alias>Arduino_Nano_v2.x</alias>
+      </aliases>
+      <description>Arduino Nano v3.x</description>
+      <docs>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</docs>
+      <footprints>
+        <fp>Arduino*Nano*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_Nano_v3.x</field>
+        <field name="Footprint">Module:Arduino_Nano</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D1/TX" type="BiDi"/>
+        <pin num="2" name="D0/RX" type="BiDi"/>
+        <pin num="3" name="RESET" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="D2" type="BiDi"/>
+        <pin num="6" name="D3" type="BiDi"/>
+        <pin num="7" name="D4" type="BiDi"/>
+        <pin num="8" name="D5" type="BiDi"/>
+        <pin num="9" name="D6" type="BiDi"/>
+        <pin num="10" name="D7" type="BiDi"/>
+        <pin num="11" name="D8" type="BiDi"/>
+        <pin num="12" name="D9" type="BiDi"/>
+        <pin num="13" name="D10" type="BiDi"/>
+        <pin num="14" name="D11" type="BiDi"/>
+        <pin num="15" name="D12" type="BiDi"/>
+        <pin num="16" name="D13" type="BiDi"/>
+        <pin num="17" name="3V3" type="power_out"/>
+        <pin num="18" name="AREF" type="input"/>
+        <pin num="19" name="A0" type="BiDi"/>
+        <pin num="20" name="A1" type="BiDi"/>
+        <pin num="21" name="A2" type="BiDi"/>
+        <pin num="22" name="A3" type="BiDi"/>
+        <pin num="23" name="A4" type="BiDi"/>
+        <pin num="24" name="A5" type="BiDi"/>
+        <pin num="25" name="A6" type="BiDi"/>
+        <pin num="26" name="A7" type="BiDi"/>
+        <pin num="27" name="+5V" type="power_in"/>
+        <pin num="28" name="RESET" type="input"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="MT3608">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MT3608</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN+" type="power_in"/>
+        <pin num="2" name="VIN-" type="power_in"/>
+        <pin num="3" name="VOUT+" type="power_out"/>
+        <pin num="4" name="VOUT-" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="QTR-1RC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">QTR-1RC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="TPS61090_dc_boost">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61090_dc_boost</field>
+      </fields>
+      <pins>
+        <pin num="1" name="USB" type="unspc"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="Bat" type="power_in"/>
+        <pin num="4" name="EN" type="input"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="LB" type="output"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="5V" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="VL53L0X">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">VL53L0X</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SDA" type="BiDi"/>
+        <pin num="4" name="SCL" type="BiDi"/>
+        <pin num="5" name="GPIO" type="output"/>
+        <pin num="6" name="XSHUT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="batt_connector">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">batt_connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Batt+" type="power_out"/>
+        <pin num="2" name="Batt-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="dc_driver_1A_3-14V">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">dc_driver_1A_3-14V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="power_in"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="in1" type="input"/>
+        <pin num="4" name="in2" type="input"/>
+        <pin num="5" name="in3" type="input"/>
+        <pin num="6" name="in4" type="input"/>
+        <pin num="7" name="M1" type="output"/>
+        <pin num="8" name="M2" type="output"/>
+        <pin num="9" name="M3" type="output"/>
+        <pin num="10" name="M4" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="bigmax" part="dc_motor_encoder">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">dc_motor_encoder</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="M1" type="input"/>
+        <pin num="4" name="M2" type="input"/>
+        <pin num="5" name="c1" type="output"/>
+        <pin num="6" name="c2" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="bigmax">
+      <uri>C:/Users/MHanicotte/Desktop/BigMax/électronique/KiCad/bigmax/bigmax.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(A1-Pad1)">
+      <node ref="A1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U6-Pad6)">
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="3" name="+6V">
+      <node ref="U7" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U10" pin="1"/>
+    </net>
+    <net code="4" name="Net-(A1-Pad30)">
+      <node ref="A1" pin="30"/>
+    </net>
+    <net code="5" name="Net-(A1-Pad17)">
+      <node ref="A1" pin="17"/>
+    </net>
+    <net code="6" name="Net-(A1-Pad28)">
+      <node ref="A1" pin="28"/>
+    </net>
+    <net code="7" name="Net-(A1-Pad3)">
+      <node ref="A1" pin="3"/>
+    </net>
+    <net code="8" name="Net-(A1-Pad18)">
+      <node ref="A1" pin="18"/>
+    </net>
+    <net code="9" name="Net-(A1-Pad2)">
+      <node ref="A1" pin="2"/>
+    </net>
+    <net code="10" name="Net-(U6-Pad4)">
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="11" name="Net-(A1-Pad8)">
+      <node ref="A1" pin="8"/>
+    </net>
+    <net code="12" name="Net-(A1-Pad7)">
+      <node ref="A1" pin="7"/>
+    </net>
+    <net code="13" name="VCC">
+      <node ref="R5" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U8" pin="1"/>
+      <node ref="U9" pin="1"/>
+      <node ref="A1" pin="27"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U6" pin="8"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="14" name="Net-(D1-Pad4)">
+      <node ref="D1" pin="4"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="15" name="Net-(D1-Pad3)">
+      <node ref="D1" pin="3"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="16" name="Net-(U9-Pad5)">
+      <node ref="U9" pin="5"/>
+    </net>
+    <net code="17" name="Net-(U8-Pad5)">
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="18" name="Net-(U6-Pad1)">
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="19" name="+BATT">
+      <node ref="U6" pin="3"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="20" name="GND">
+      <node ref="R4" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U10" pin="2"/>
+      <node ref="A1" pin="29"/>
+      <node ref="A1" pin="4"/>
+      <node ref="U8" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U9" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U6" pin="7"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U6" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="21" name="Net-(A1-Pad19)">
+      <node ref="A1" pin="19"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="22" name="Net-(A1-Pad20)">
+      <node ref="A1" pin="20"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="23" name="Net-(D1-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="24" name="/scl">
+      <node ref="U8" pin="4"/>
+      <node ref="A1" pin="24"/>
+      <node ref="R5" pin="1"/>
+      <node ref="U9" pin="4"/>
+    </net>
+    <net code="25" name="/sda">
+      <node ref="A1" pin="23"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U8" pin="3"/>
+      <node ref="U9" pin="3"/>
+    </net>
+    <net code="26" name="/M1">
+      <node ref="U10" pin="7"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="27" name="/in4">
+      <node ref="R4" pin="1"/>
+      <node ref="A1" pin="14"/>
+      <node ref="U10" pin="6"/>
+    </net>
+    <net code="28" name="/in3">
+      <node ref="R3" pin="1"/>
+      <node ref="A1" pin="13"/>
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="29" name="/in2">
+      <node ref="R2" pin="1"/>
+      <node ref="A1" pin="12"/>
+      <node ref="U10" pin="4"/>
+    </net>
+    <net code="30" name="/in1">
+      <node ref="U10" pin="3"/>
+      <node ref="R1" pin="1"/>
+      <node ref="A1" pin="9"/>
+    </net>
+    <net code="31" name="/M4">
+      <node ref="U4" pin="4"/>
+      <node ref="U10" pin="10"/>
+    </net>
+    <net code="32" name="/M2">
+      <node ref="U3" pin="4"/>
+      <node ref="U10" pin="8"/>
+    </net>
+    <net code="33" name="/c2_b">
+      <node ref="U4" pin="6"/>
+      <node ref="A1" pin="11"/>
+    </net>
+    <net code="34" name="/c1_b">
+      <node ref="A1" pin="6"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="35" name="/c2_a">
+      <node ref="A1" pin="10"/>
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="36" name="/c1_a">
+      <node ref="A1" pin="5"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="37" name="/M3">
+      <node ref="U10" pin="9"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="38" name="/out_b">
+      <node ref="U2" pin="3"/>
+      <node ref="A1" pin="26"/>
+    </net>
+    <net code="39" name="/out_a">
+      <node ref="U1" pin="3"/>
+      <node ref="A1" pin="25"/>
+    </net>
+    <net code="40" name="/XSHUT_b">
+      <node ref="A1" pin="16"/>
+      <node ref="U9" pin="6"/>
+    </net>
+    <net code="41" name="/XSHUT_a">
+      <node ref="A1" pin="15"/>
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="42" name="Net-(A1-Pad21)">
+      <node ref="A1" pin="21"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="43" name="Net-(A1-Pad22)">
+      <node ref="R7" pin="1"/>
+      <node ref="A1" pin="22"/>
+    </net>
+  </nets>
+</export>
