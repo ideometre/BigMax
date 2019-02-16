@@ -5,13 +5,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "BIGMAX  robot sumo"
-Date "2019-01-30"
+Title "Bigmax - robot sumo"
+Date "2019-01-31"
 Rev "v1.0"
 Comp "MX"
-Comment1 "status : completed"
-Comment2 "author : maxime hanicotte"
-Comment3 "description : standart sumo robot design"
+Comment1 "Statut : Terminé"
+Comment2 "Auteur : Maxime Hanicotte"
+Comment3 "Description : Carte de contrôle pour sumo robot."
 Comment4 ""
 $EndDescr
 $Comp

@@ -5,13 +5,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "BIGMAX  robot sumo"
-Date "2019-01-30"
+Title "Bigmax - robot sumo"
+Date "2019-01-31"
 Rev "v1.0"
 Comp "MX"
-Comment1 "status : completed"
-Comment2 "author : maxime hanicotte"
-Comment3 "description : standart sumo robot design"
+Comment1 "Statut : Terminé"
+Comment2 "Auteur : Maxime Hanicotte"
+Comment3 "Description : Carte de contrôle pour sumo robot."
 Comment4 ""
 $EndDescr
 $Comp
@@ -854,21 +854,21 @@ F 3 "" H 5250 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L bigmax:micro_start U?
+L bigmax:micro_start U11
 U 1 1 5C56E0E5
 P 4250 3200
-F 0 "U?" H 4250 3515 50  0000 C CNN
+F 0 "U11" H 4250 3515 50  0000 C CNN
 F 1 "micro_start" H 4250 3424 50  0000 C CNN
-F 2 "" H 4250 3200 50  0001 C CNN
+F 2 "bigmax:micro_start" H 4250 3200 50  0001 C CNN
 F 3 "" H 4250 3200 50  0001 C CNN
 	1    4250 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR010
 U 1 1 5C56E249
 P 3800 3200
-F 0 "#PWR?" H 3800 3050 50  0001 C CNN
+F 0 "#PWR010" H 3800 3050 50  0001 C CNN
 F 1 "VCC" H 3817 3373 50  0000 C CNN
 F 2 "" H 3800 3200 50  0001 C CNN
 F 3 "" H 3800 3200 50  0001 C CNN
@@ -876,10 +876,10 @@ F 3 "" H 3800 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR027
 U 1 1 5C56E3B2
 P 4700 3200
-F 0 "#PWR?" H 4700 2950 50  0001 C CNN
+F 0 "#PWR027" H 4700 2950 50  0001 C CNN
 F 1 "GND" H 4705 3027 50  0000 C CNN
 F 2 "" H 4700 3200 50  0001 C CNN
 F 3 "" H 4700 3200 50  0001 C CNN
