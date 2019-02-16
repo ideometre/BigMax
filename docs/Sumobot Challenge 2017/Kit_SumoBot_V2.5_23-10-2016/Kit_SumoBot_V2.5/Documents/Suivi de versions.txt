@@ -1,0 +1,7 @@
+Kit SumoBot version 2.5 :
+
+Version carte NANO : 2.4 
+Version carte NANO (fichiers) : 2.5 (c'est la version 2.4 avec les 2 erreurs corrigées)
+Version carte puissance : 2.3
+Version code Arduino : 2
+Version des documents : 2.5
