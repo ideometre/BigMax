@@ -5,101 +5,75 @@
 #define NUM_SENSORS   2     // number of sensors used
 #define TIMEOUT       2500  // waits for 2500 microseconds for sensor outputs to go low
 #define EMITTER_PIN   2     // emitter is controlled by digital pin 2
-
 #define motorRightC1  2
 #define motorRightC2  7
 #define motorLeftC1   3
 #define motorLeftC2   8
 
-// right motor position
-volatile unsigned int motorRightPos = 0;
+volatile unsigned int motorRightPos = 0;// right motor position
 unsigned int tmpR = 0;
-
-// left motor position
-volatile unsigned int motorLeftPos = 0;
+volatile unsigned int motorLeftPos = 0;// left motor position
 unsigned int tmpL = 0;
-
-// right motor encoder
-unsigned int oldRC1 = 0;
+unsigned int oldRC1 = 0;// right motor encoder
 unsigned int newRC1 = 0;
 unsigned int RC2 = 0;
-
-// left motor encoder
-unsigned int oldLC1 = 0;
+unsigned int oldLC1 = 0;// left motor encoder
 unsigned int newLC1 = 0;
 unsigned int LC2 = 0;
-
 // sensors right and left connected to analog pins A6 and A7, respectively
 QTRSensorsRC qtrrc((unsigned char[]){A6,A7}, NUM_SENSORS, TIMEOUT, EMITTER_PIN);
 unsigned int sensorValues[NUM_SENSORS];
-
-// Distance sensor
-VL53L0X sensor;
-
-//Motor A
-const int motorPin1 = 6;
+VL53L0X sensor;  // Distance sensor
+const int motorPin1 = 6;    //Motor A
 const int motorPin2 = 9;
-
-//Motor B
-const int motorPin3 = 10;
+const int motorPin3 = 10;   //Motor B
 const int motorPin4 = 11;
 
-void setup() {
-  // initialize serial
-  Serial.begin(115200);
-
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-  
+void setup(){
+  Serial.begin(115200);             // initialize serial
+  pinMode(LED_BUILTIN, OUTPUT);     // initialize digital pin LED_BUILTIN as an output.  
   setup_VL53L0X();
   setup_QTRRC();
   setup_motor();
   setup_encoder();
 }
 
-void loop() {
+void loop(){
   loop_VL53L0X();
   loop_QTRRC();
   loop_motor();
   loop_encoder();
-
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(1000);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  //delay(1000);                       // wait for a second
+  delay(1000);                       // wait for a second
 }
 
-void setup_VL53L0X()
-{
+void setup_VL53L0X(){
   Wire.begin();
   sensor.init();
   sensor.setTimeout(500);
-
-  // Start continuous back-to-back mode (take readings as
-  // fast as possible).  To use continuous timed mode
-  // instead, provide a desired inter-measurement period in
-  // ms (e.g. sensor.startContinuous(100)).
-  sensor.startContinuous();
+  sensor.startContinuous(100);
 }
 
 void setup_QTRRC()
 {
   digitalWrite(LED_BUILTIN, HIGH);  // turn on Arduino's LED to indicate we are in calibration mode
-  for (int i = 0; i < 400; i++)     // make the calibration take about 10 seconds
-  {
-    qtrrc.calibrate();              // reads all sensors 10 times at 2500 us per read (i.e. ~25 ms per call)
+  for (int i = 0; i < 400; i++){
+    // make the calibration take about 10 seconds
+    qtrrc.calibrate(); // reads all sensors 10 times at 2500 us per read (i.e. ~25 ms per call)
   }
+  
   digitalWrite(LED_BUILTIN, LOW);   // turn off Arduino's LED to indicate we are through with calibration
-
-  for (int i = 0; i < NUM_SENSORS; i++)
-  { // print the calibration minimum values measured when emitters were on
+  for (int i = 0; i < NUM_SENSORS; i++){
+    // print the calibration minimum values measured when emitters were on
     Serial.print(qtrrc.calibratedMinimumOn[i]);
     Serial.print(' ');
   }
   Serial.println();
 
-  for (int i = 0; i < NUM_SENSORS; i++)
-  { // print the calibration maximum values measured when emitters were on
+  for (int i = 0; i < NUM_SENSORS; i++){
+    // print the calibration maximum values measured when emitters were on
     Serial.print(qtrrc.calibratedMaximumOn[i]);
     Serial.print(' ');
   }
@@ -117,10 +91,8 @@ void setup_motor() {
 void setup_encoder() {
   pinMode(motorRightC1, INPUT);
   pinMode(motorLeftC1, INPUT);
-  // encoder pin on interrupt 0 (pin 2)
-  attachInterrupt(0, doEncoderRight, CHANGE);
-  // encoder pin on interrupt 1 (pin 3)
-  attachInterrupt(1, doEncoderLeft, CHANGE);
+  attachInterrupt(0, doEncoderRight, CHANGE);   // encoder pin on interrupt 0 (pin 2)
+  attachInterrupt(1, doEncoderLeft, CHANGE);    // encoder pin on interrupt 1 (pin 3)
 }
 
 void loop_QTRRC()
@@ -132,8 +104,7 @@ void loop_QTRRC()
 
   // print the sensor values as numbers from 0 to 1000, where 0 means maximum reflectance and
   // 1000 means minimum reflectance, followed by the line position
-  for (unsigned char i = 0; i < NUM_SENSORS; i++)
-  {
+  for (unsigned char i = 0; i < NUM_SENSORS; i++){
     Serial.print(sensorValues[i]);
     Serial.print('\t');
   }
@@ -144,8 +115,7 @@ void loop_QTRRC()
 void loop_VL53L0X()
 {
   Serial.print(sensor.readRangeContinuousMillimeters());
-  if (sensor.timeoutOccurred())
-  {
+  if (sensor.timeoutOccurred()){
     Serial.print(" TIMEOUT");
   }
   Serial.println();
@@ -153,7 +123,6 @@ void loop_VL53L0X()
 
 void loop_motor() {
   // Motor Control - Motor A: motorPin1,motorpin2 & Motor B: motorpin3,motorpin4
-
   // This code will turn Motor A clockwise for 2 sec.
   analogWrite(motorPin1, 180);
   analogWrite(motorPin2, 0);
@@ -199,7 +168,7 @@ void loop_encoder() {
 }
 
 // Interrupt on Right changing state
-void doEncoderRight() {
+void doEncoderRight(){
   delay(1);
   newRC1 = digitalRead(motorRightC1);
   RC2 = digitalRead(motorLeftC2);
@@ -209,8 +178,7 @@ void doEncoderRight() {
   else if (oldRC1 == HIGH && newRC1 == LOW && RC2 == HIGH){
     motorRightPos++;
   }
-  else
-  {
+  else{
     motorRightPos--;
   }
   oldRC1 = newRC1;
@@ -227,8 +195,7 @@ void doEncoderLeft() {
   else if (oldLC1 == HIGH && newLC1 == LOW && LC2 == LOW){
     motorRightPos++;
   }
-  else
-  {
+  else {
     motorLeftPos--;
   }
   oldLC1 = newLC1;
