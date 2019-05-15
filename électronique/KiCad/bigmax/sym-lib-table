@@ -1,4 +1,2 @@
 (sym_lib_table
-  (lib (name bigmax)(type Legacy)(uri C:/Users/MHanicotte/Desktop/BigMax/électronique/KiCad/bigmax/bigmax.lib)(options "")(descr ""))
-  (lib (name bigmax-rescue)(type Legacy)(uri ${KIPRJMOD}/bigmax-rescue.lib)(options "")(descr ""))
 )

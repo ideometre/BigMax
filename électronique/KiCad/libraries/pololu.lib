@@ -1,0 +1,99 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# pololu_enc03b
+#
+DEF pololu_enc03b U 0 40 Y Y 1 F N
+F0 "U" 0 450 50 H V C CNN
+F1 "pololu_enc03b" 0 350 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+S -250 250 250 -250 0 1 0 N
+X gnd 1 450 50 200 L 50 50 1 1 P
+X b 2 -450 -150 200 R 50 50 1 1 O
+X a 3 -450 -50 200 R 50 50 1 1 O
+X vcc 4 450 150 200 L 50 50 1 1 W
+X M2 5 -450 50 200 R 50 50 1 1 I
+X M1 6 -450 150 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# pololu_irs01a
+#
+DEF pololu_irs01a U 0 40 Y Y 1 F N
+F0 "U" 0 400 50 H V C CNN
+F1 "pololu_irs01a" 0 300 50 H V C CNN
+F2 "" 50 -50 50 H I C CNN
+F3 "" 50 -50 50 H I C CNN
+DRAW
+S -150 200 150 -200 0 1 0 N
+X gnd 1 -100 -400 200 U 50 50 1 1 P
+X vin 2 0 -400 200 U 50 50 1 1 W
+X out 3 100 -400 200 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# pololu_md17a
+#
+DEF pololu_md17a U 0 40 Y Y 1 F N
+F0 "U" 0 -650 50 H V C CNN
+F1 "pololu_md17a" 0 450 50 H V C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+S -300 350 300 -550 0 1 0 N
+X gnd 1 -500 250 200 R 50 50 1 1 P
+X vin 10 500 150 200 L 50 50 1 1 W
+X out_b1 11 500 50 200 L 50 50 1 1 O
+X out_b2 12 500 -50 200 L 50 50 1 1 O
+X out_a2 13 500 -150 200 L 50 50 1 1 O
+X out_a1 14 500 -250 200 L 50 50 1 1 O
+X aisen 15 500 -350 200 L 50 50 1 1 O
+X bisen 16 500 -450 200 L 50 50 1 1 O
+X vmm 2 -500 150 200 R 50 50 1 1 W
+X in_b1 3 -500 50 200 R 50 50 1 1 I
+X in_b2 4 -500 -50 200 R 50 50 1 1 I
+X in_a2 5 -500 -150 200 R 50 50 1 1 I
+X in_a1 6 -500 -250 200 R 50 50 1 1 I
+X slp 7 -500 -350 200 R 50 50 1 1 I
+X flt 8 -500 -450 200 R 50 50 1 1 O
+X gnd 9 500 250 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pololu_reg04b
+#
+DEF pololu_reg04b U 0 40 Y Y 1 F N
+F0 "U" 0 -350 50 H V C CNN
+F1 "pololu_reg04b" 0 250 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+S -200 150 200 -250 0 1 0 N
+X vout 1 -400 -200 200 R 50 50 1 1 w
+X gnd 2 -400 -100 200 R 50 50 1 1 P
+X vin 3 -400 0 200 R 50 50 1 1 W
+X shdn 4 -400 100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# pololu_reg19a
+#
+DEF pololu_reg19a U 0 40 Y Y 1 F N
+F0 "U" 0 -350 50 H V C CNN
+F1 "pololu_reg19a" 0 250 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+S -200 150 200 -250 0 1 0 N
+X pg 1 -400 100 200 R 50 50 1 1 I
+X en 2 -400 0 200 R 50 50 1 1 I
+X in 3 -400 -100 200 R 50 50 1 1 W
+X gnd 4 -400 -200 200 R 50 50 1 1 P
+X out 5 400 100 200 L 50 50 1 1 w
+X gnd 6 400 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
