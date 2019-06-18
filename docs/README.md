@@ -59,7 +59,7 @@ Bibliothèques utilisées
 
 Code source du projet
 
-<a href="maxime-hanicotte.github.com"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
+<a href="https://maxime-hanicotte.github.io"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
 
 
 
