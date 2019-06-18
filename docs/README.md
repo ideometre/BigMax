@@ -1,5 +1,3 @@
-### [< Return](https://maxime-hanicotte.github.io)
-
 # Bienvenue sur la page du projet
 
 Big Max est un robot destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.wikipedia.org/wiki/Robot_sumo)) dans la catégorie mini. Le projet a une vocation éducative et permet d'aborder les trois sujets clés que sont la mécanique, l'électronique et l'informatique autour de la conception de ce robot.
@@ -61,7 +59,7 @@ Bibliothèques utilisées
 
 Code source du projet
 
-<img src="./img/mx-logo.png" width="36" alt="MX" align="right">
+<a href="maxime-hanicotte.github.com"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
 
 
 
