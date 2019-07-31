@@ -69,6 +69,6 @@ Menu M - Le meilleur compromis pour des performances au rendez-vous €€
 
 Menu L - Un régal pour les plus exigeants €€€
 
-<a href="https://maxime-hanicotte.github.io"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
+<a href="https://www.maxime.hanicotte.net"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
 
 --
