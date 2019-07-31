@@ -16,22 +16,22 @@ _Destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.
 <img src="./img/inkscape-logo.svg" width="36" alt="inkscape" align="right">
 
 Certaines pièces du robot sont dessinées en 2D, elle peuvent être réalisées avec une découpeuse laser sur divers matériaux (bois, plexiglass, aluminium)
-* Face avant
-* Face arrière
-* Côtés droit et gauche
+* Structure de chassis
+* Coque de protection aluminium
 
 ### Pièces 3D
 <img src="./img/freecad-logo.png" width="36" alt="freecad" align="right">
 
 Ces pièces sont conçues pour être imprimées chez soi avec une imprimante 3D
-* Support moteurs
+* Fixation pour moteur
 * Roues
+* Encodeur
 
 ## Electronique [<img src="./img/rep.png" alt="rep">](https://github.com/maxime-hanicotte/BigMax/tree/master/électronique)
 
 ### Modules
 
-Les modules standards utilisés pour ce projet
+Les composants utilisés pour ce projet
 * <img src="./img/ir.png" alt="ir"> line sensors
 * <img src="./img/drv.png" alt="drv"> dc motor drivers
 * <img src="./img/led.png" alt="led"> leds
@@ -45,7 +45,7 @@ Les modules standards utilisés pour ce projet
 ### CAO
 <img src="./img/kicad-logo.png" width="36" alt="kicad" align="right">
 
-Conception de la carte életronique du robot
+Conception des cartes électroniques
 * Schématique
 * PCB
 * Liste du matériel
@@ -61,18 +61,14 @@ Bibliothèques utilisées
 
 Code source du projet
 
-<a href="https://maxime-hanicotte.github.io"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
-
-
-
 # A la carte
+
 Menu S - Un choix malin pour les petites faims €
 
 Menu M - Le meilleur compromis pour des performances au rendez-vous €€
 
 Menu L - Un régal pour les plus exigeants €€€
 
-
-
+<a href="https://maxime-hanicotte.github.io"><img src="./img/mx-logo.png" width="36" alt="MX" align="right"></a>
 
 --
