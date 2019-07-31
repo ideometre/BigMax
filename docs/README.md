@@ -1,12 +1,12 @@
 # « Ceci n’est pas un burger »
 
-Big Max c’est ce petit robot à croquer!
+BigMax c’est ce petit robot à croquer!
 
 Garni de nombreux capteurs il ne vous laissera pas sur votre faim. Chaque composant a été sélectionné avec soin pour vous proposer notre meilleure recette.
 
 Conçu pour la compétition il ne fera qu’une bouchée de ses adversaires. Et pour les plus affamés, nous vous proposons le Double BigMax, un étage en plus qui ajoute des fonctionnalités gourmandes à ce délicieux robot! Deux étages musclés qui apportent le meilleur de la robotique et de l’intelligence artificielle!
 
-L’histoire de Big Max c’est l’alliance du goût pour la création électronique avec un soupçon de charme pour faire de ce robot le parfait compagnon. Plein d’énergie et de malice il se distingue par ses formes modernes et des matériaux de qualité qui le rendent inimitable.
+L’histoire de BigMax c’est l’alliance du goût pour la création électronique avec un soupçon de charme pour faire de ce robot le parfait compagnon. Plein d’énergie et de malice il se distingue par ses formes modernes et des matériaux de qualité qui le rendent inimitable.
 
 _Destiné à concourir aux compétitions de robot sumo (ou [sumobot](https://fr.wikipedia.org/wiki/Robot_sumo)) dans la catégorie mini. Le projet a une vocation éducative et permet d'aborder les trois sujets clés que sont la mécanique, l'électronique et l'informatique autour de la conception de ce robot._
 
