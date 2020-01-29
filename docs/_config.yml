@@ -1,6 +1,4 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-primer
 title: BigMax
 description: A sumo robot project
-logo: ./img/BM.jpg
-show_downloads: false
 google_analytics: UA-146204588-1
