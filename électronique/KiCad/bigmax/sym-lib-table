@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name bigmax-rescue)(type Legacy)(uri ${KIPRJMOD}/bigmax-rescue.lib)(options "")(descr ""))
 )

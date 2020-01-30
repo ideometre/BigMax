@@ -14,7 +14,7 @@ Comment3 "Description : Carte de contrôle pour sumo robot."
 Comment4 ""
 $EndDescr
 $Comp
-L arduino:Arduino_Nano_v3.x A1
+L bigmax-rescue:Arduino_Nano_v3.x-arduino A1
 U 1 1 5C33D3C7
 P 5800 4400
 F 0 "A1" H 5450 3400 50  0000 C CNN
@@ -492,7 +492,7 @@ F 3 "" H 1750 2200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pololu:pololu_reg04b U6
+L bigmax-rescue:pololu_reg04b-pololu U6
 U 1 1 5CAE60DD
 P 7250 2350
 F 0 "U6" H 7550 2350 50  0000 L CNN
@@ -503,7 +503,7 @@ F 3 "" H 7250 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pololu:pololu_reg19a U5
+L bigmax-rescue:pololu_reg19a-pololu U5
 U 1 1 5CAE6994
 P 7250 1450
 F 0 "U5" H 7250 1100 50  0000 C CNN
@@ -550,7 +550,7 @@ F 3 "" H 6850 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L no_name:generic_vl53l0x U8
+L bigmax-rescue:generic_vl53l0x-no_name U8
 U 1 1 5CB0FB63
 P 10100 1850
 F 0 "U8" H 10328 1896 50  0000 L CNN
@@ -561,7 +561,7 @@ F 3 "" H 10000 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L no_name:generic_vl53l0x U9
+L bigmax-rescue:generic_vl53l0x-no_name U9
 U 1 1 5CB1081C
 P 10100 2800
 F 0 "U9" H 10328 2846 50  0000 L CNN
@@ -649,7 +649,7 @@ F 3 "" H 7500 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pololu:pololu_enc03b U2
+L bigmax-rescue:pololu_enc03b-pololu U2
 U 1 1 5CB21E7F
 P 2100 6700
 F 0 "U2" H 2100 7115 50  0000 C CNN
@@ -660,7 +660,7 @@ F 3 "" H 2100 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pololu:pololu_enc03b U1
+L bigmax-rescue:pololu_enc03b-pololu U1
 U 1 1 5CB223A2
 P 2100 5500
 F 0 "U1" H 2100 5915 50  0000 C CNN
@@ -671,7 +671,7 @@ F 3 "" H 2100 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pololu:pololu_md17a U7
+L bigmax-rescue:pololu_md17a-pololu U7
 U 1 1 5CB377CA
 P 10000 4650
 F 0 "U7" H 10000 5165 50  0000 C CNN
@@ -766,7 +766,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 2350 6850 2350
 $Comp
-L no_name:Conn_01x02 J2
+L bigmax-rescue:Conn_01x02-no_name J2
 U 1 1 5CB86451
 P 5450 1950
 F 0 "J2" H 5368 1625 50  0000 C CNN
@@ -779,7 +779,7 @@ $EndComp
 Wire Wire Line
 	5300 4200 4450 4200
 $Comp
-L no_name:Conn_01x03_output J1
+L bigmax-rescue:Conn_01x03_output-no_name J1
 U 1 1 5CB78B9C
 P 4250 4200
 F 0 "J1" H 4168 3875 50  0000 C CNN
@@ -897,7 +897,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 4400 9100 4250
 $Comp
-L no_name:generic_18650_3s_case U13
+L bigmax-rescue:generic_18650_3s_case-no_name U13
 U 1 1 5CD14025
 P 4500 1450
 F 0 "U13" H 4500 1815 50  0000 C CNN
@@ -930,7 +930,7 @@ F 3 "~" H 2400 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L no_name:generic_vertical_slide_switch U11
+L bigmax-rescue:generic_vertical_slide_switch-no_name U11
 U 1 1 5CD1BA90
 P 3700 1850
 F 0 "U11" H 3928 1763 50  0000 L CNN
@@ -941,7 +941,7 @@ F 3 "" H 3700 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L no_name:generic_bms_3s_10A U12
+L bigmax-rescue:generic_bms_3s_10A-no_name U12
 U 1 1 5CD1C1A9
 P 4450 2350
 F 0 "U12" H 4878 2293 50  0000 L CNN
@@ -952,7 +952,7 @@ F 3 "" H 4450 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L no_name:Conn_01x02 J4
+L bigmax-rescue:Conn_01x02-no_name J4
 U 1 1 5CD1E319
 P 3200 2400
 F 0 "J4" H 3118 2075 50  0000 C CNN
