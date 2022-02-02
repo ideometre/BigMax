@@ -60,7 +60,7 @@ int detect_tof_right = 500;
 int detect_tof_left = 500;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Wire.begin();
   Serial.println("begin init");
 
@@ -74,6 +74,7 @@ void setup() {
   pinMode(IN2, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
+
   // input
   pinMode(btn_pin, INPUT);
   pinMode(micro_start, INPUT);
@@ -104,15 +105,18 @@ void setup() {
 }
 
 void loop() {
-  
+
   // read sensors
   btn_state = digitalRead(btn_pin);
   micro_start_state = digitalRead(micro_start);
+
   val_line_right = analogRead(line_right);
   val_line_left = analogRead(line_left);
+
   val_tof_right = tof_right.readRangeContinuousMillimeters();
   if (tof_right.timeoutOccurred()) timeout_tof_right = 1;
   else timeout_tof_right = 0;
+
   val_tof_left = tof_left.readRangeContinuousMillimeters();
   if (tof_left.timeoutOccurred()) timeout_tof_left = 1;
   else timeout_tof_left = 0;
@@ -199,16 +203,19 @@ void set_rgb()
       digitalWrite(rgb_green, LOW);
       digitalWrite(rgb_blue, HIGH);
       break;
+
     case PUSH:
       digitalWrite(rgb_red, LOW);
       digitalWrite(rgb_green, HIGH);
       digitalWrite(rgb_blue, LOW);
       break;
+
     case UTURN:
       digitalWrite(rgb_red, HIGH);
       digitalWrite(rgb_green, LOW);
       digitalWrite(rgb_blue, LOW);
       break;
+
     default://WAIT
       digitalWrite(rgb_red, LOW);
       digitalWrite(rgb_green, LOW);
@@ -243,7 +250,6 @@ void set_motors()
       }
       break;
 
-
     case PUSH:
       if (dir == FORWARD) {
         analogWrite(IN1, 0);
@@ -257,7 +263,6 @@ void set_motors()
         analogWrite(IN4, speed_motor_slow);
       }
       break;
-
 
     case UTURN:
       if (sens == CLOCK)
@@ -286,6 +291,7 @@ void set_motors()
       analogWrite(IN4, 0);
       delay(500);
       break;
+
     default://WAIT
       analogWrite(IN1, 0);
       analogWrite(IN2, 0);

@@ -11,10 +11,12 @@
 
   (page A4)
   (title_block
-    (title pcb_bigmax)
+    (title BIGMAX)
     (date 2019-05-03)
-    (rev v2)
-    (company mx)
+    (rev v2.0.0)
+    (company MX)
+    (comment 1 maxime-hanicotte)
+    (comment 2 "mai 2019")
   )
 
   (layers
@@ -2522,7 +2524,7 @@
   (segment (start 211.455 120.65) (end 231.775 100.33) (width 2) (layer B.Cu) (net 40) (tstamp 5CD095B0) (status 10))
   (segment (start 231.775 100.33) (end 231.775 98.425) (width 2) (layer B.Cu) (net 40) (tstamp 5CD095C2) (status 20))
 
-  (zone (net 23) (net_name GND) (layer F.Cu) (tstamp 5CD294B4) (hatch edge 0.508)
+  (zone (net 23) (net_name GND) (layer F.Cu) (tstamp 5E334E17) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3152,7 +3154,7 @@
       )
     )
   )
-  (zone (net 23) (net_name GND) (layer B.Cu) (tstamp 5CD294B1) (hatch edge 0.508)
+  (zone (net 23) (net_name GND) (layer B.Cu) (tstamp 5E334E14) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
